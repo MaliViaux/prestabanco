@@ -1,32 +1,22 @@
 pipeline{
     agent any
-    tools{
-        maven "maven"
-
-    }
     stages{
-        stage("Build JAR File"){
+        stage("Build Frontend"){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/MaliViaux/autofixapp']])
-                dir("prestabanco-backend"){
-                    bat "mvn clean install"
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/maliviaux/prestabanco']])
+                dir("prestabanco-frontend"){
+                    bat "npm install"
+                    bat "npm run build"
                 }
             }
         }
-        stage("Test"){
-            steps{
-                dir("prestabanco-backend"){
-                    bat "mvn test"
-                }
-            }
-        }        
         stage("Build and Push Docker Image"){
             steps{
-                dir("prestabanco-backend"){
+                dir("prestabanco-frontend"){
                     script{
                          withDockerRegistry(credentialsId: 'docker-credentials'){
-                            bat "docker build -t maliviaux/prestabanco-backend ."
-                            bat "docker push maliviaux/prestabanco-backend"
+                            bat "docker build -t maliviaux/prestabanco-frontend:latest ."
+                            bat "docker push maliviaux/prestabanco-frontend"
                         }
                     }                    
                 }
