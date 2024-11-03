@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Build Frontend"){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/maliviaux/prestabanco']])
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/maliviaux/prestabanco']])
                 dir("prestabanco-frontend"){
                     bat "npm install"
                     bat "npm run build"
