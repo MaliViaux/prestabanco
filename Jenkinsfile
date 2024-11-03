@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("Build JAR File"){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/maliviaux/prestabanco']])
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/maliviaux/prestabanco']])
                 dir("prestabanco-backend"){
                     bat "mvn clean install"
                 }
