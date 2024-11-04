@@ -49,7 +49,7 @@ services:
   # Backend services
   spring1:
     container_name: prestabanco-backend-container-1
-    image: maliviaux/prestabanco-backend:latest  # Cambia a backend si es necesario
+    image: maliviaux/prestabanco-backend:latest
     ports:
       - 8091:8090
     environment:
@@ -65,7 +65,7 @@ services:
 
   spring2:
     container_name: prestabanco-backend-container-2
-    image: maliviaux/prestabanco-backend:latest  # Cambia a backend si es necesario
+    image: maliviaux/prestabanco-backend:latest
     ports:
       - 8092:8090
     environment:
@@ -81,7 +81,7 @@ services:
 
   spring3:
     container_name: prestabanco-backend-container-3
-    image: maliviaux/prestabanco-backend:latest  # Cambia a backend si es necesario
+    image: maliviaux/prestabanco-backend:latest
     ports:
       - 8093:8090
     environment:
