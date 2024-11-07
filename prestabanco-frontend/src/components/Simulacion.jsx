@@ -143,22 +143,34 @@ const Simulacion = () => {
           </Typography>
           <List>
             <ListItem>
-              <ListItemText primary={`Cuota Mensual: $${resultados.cuotaMensual.toFixed(2)}`} />
+              <ListItemText
+                primary={`Cuota Mensual: ${new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', minimumFractionDigits: 0 }).format(resultados.cuotaMensual)}`}
+              />
             </ListItem>
             <ListItem>
-              <ListItemText primary={`Seguro de Desgravamen: $${resultados.seguroDesgravamen.toFixed(2)}`} />
+              <ListItemText
+                primary={`Seguro de Desgravamen: ${new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', minimumFractionDigits: 0 }).format(resultados.seguroDesgravamen)}`}
+              />
             </ListItem>
             <ListItem>
-              <ListItemText primary={`Seguro de Incendio: $${resultados.seguroIncendio.toFixed(2)}`} />
+              <ListItemText
+                primary={`Seguro de Incendio: ${new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', minimumFractionDigits: 0 }).format(resultados.seguroIncendio)}`}
+              />
             </ListItem>
             <ListItem>
-              <ListItemText primary={`Comisión por Administración: $${resultados.comisionAdministracion.toFixed(2)}`} />
+              <ListItemText
+                primary={`Comisión por Administración: ${new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', minimumFractionDigits: 0 }).format(resultados.comisionAdministracion)}`}
+              />
             </ListItem>
             <ListItem>
-              <ListItemText primary={`Costo Mensual Total: $${resultados.costoMensual.toFixed(2)}`} />
+              <ListItemText
+                primary={`Costo Mensual Total: ${new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', minimumFractionDigits: 0 }).format(resultados.costoMensual)}`}
+              />
             </ListItem>
             <ListItem>
-              <ListItemText primary={`Costo Total del Crédito: $${resultados.costoTotal.toFixed(2)}`} />
+              <ListItemText
+                primary={`Costo Total del Crédito: ${new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', minimumFractionDigits: 0 }).format(resultados.costoTotal)}`}
+              />
             </ListItem>
           </List>
         </Paper>
