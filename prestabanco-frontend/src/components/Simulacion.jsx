@@ -132,7 +132,7 @@ const Simulacion = () => {
           style={{ marginTop: '20px' }}
           fullWidth
         >
-          Simular
+          Simular Chile
         </Button>
       </Paper>
 
