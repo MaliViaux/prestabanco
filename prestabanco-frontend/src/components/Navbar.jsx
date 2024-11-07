@@ -30,7 +30,7 @@ const Navbar = () => {
             <MenuIcon />
           </IconButton>
 
-          <Typography variant="h6" component="div" sx={{ textAlign: 'center', flexGrow: 1, color: '#4a4a4a' }}>PRESTA BANCO</Typography>
+          <Typography variant="h6" component="div" sx={{ textAlign: 'center', flexGrow: 1, color: '#4a4a4a' }}>PRESTAndo BANCO</Typography>
 
           <Box sx={{ position: 'absolute', display: 'flex', gap: 2, right: 16 }}>
             {userType ? (
