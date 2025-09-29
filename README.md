@@ -1,74 +1,75 @@
-# prestabanco
-PrestaBanco is a banking system developed as part of the Software Engineering Techniques course. The project implements both backend and frontend components, following industry best practices in usability, deployment, and cloud integration.
+# 🏦 PrestaBanco  
 
-🚀 Technologies Used
-Backend
+PrestaBanco is a **banking system** developed as part of the *Software Engineering Techniques* course. The project implements backend and frontend components, following industry best practices in usability, deployment, and cloud integration.  
 
-Java with Spring Boot
+---
 
-Frontend
+## 📌 Technologies  
 
-React with Material UI
+### 🖥️ Backend  
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 
-JavaScript
+### 💻 Frontend  
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Material UI](https://img.shields.io/badge/MUI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
 
-Vite as the build tool
+### 🗄️ Database  
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)  
 
-Designed following Jakob Nielsen’s 10 Usability Heuristics for User Interface Design
+### ⚙️ DevOps & Deployment  
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
 
-DevOps & Deployment
+---
 
-Docker and Jenkins for automated deployment
+## ⚙️ System Features  
 
-Nginx as reverse proxy and load balancing
+- **User Management**:  
+  - Both **clients** and **bank executives** can create accounts.  
 
-Microsoft Azure for cloud hosting
+- **Client Features**:  
+  - Enter personal and financial data.  
+  - Submit **loan requests**.  
+  - Automatic calculation of **financial indicators** based on submitted data (assessing financial behavior and reliability).  
 
-Database
+- **Executive Features**:  
+  - Access client financial analysis.  
+  - **Approve** or **reject** loan requests according to financial behavior indicators.  
 
-MySQL
+---
 
-⚙️ System Features
+## 🖥️ System Architecture  
 
-User Management:
+| Layer        | Technologies |
+|--------------|--------------|
+| **Backend**  | Java, Spring Boot |
+| **Frontend** | React, Material UI, Vite, JavaScript |
+| **Database** | MySQL |
+| **DevOps**   | Docker, Jenkins, Nginx |
+| **Cloud**    | Microsoft Azure |
 
-Both clients and bank executives can create accounts.
+---
 
-Client Features:
+## 🎯 Key Highlights  
 
-Enter personal and financial data.
+- Full-stack system combining **robust backend services** with a **user-centered frontend**.  
+- **Automated deployment pipeline** ensuring fast and reliable releases.  
+- **Cloud-ready architecture** supporting scalability and modern banking operations.  
+- UI designed following **Jakob Nielsen’s 10 Usability Heuristics for User Interface Design**.  
 
-Submit loan requests.
+---
 
-Automatic calculation of financial indicators based on submitted data (assessing financial behavior and reliability).
+## 📖 Course Context  
 
-Executive Features:
+This project was developed for the *Software Engineering Techniques* course, focusing on the application of software engineering practices, usability design, and DevOps integration in real-world scenarios.  
 
-Access client financial analysis.
+---
 
-Approve or reject loan requests according to financial behavior indicators.
-
-🖥️ System Architecture
-
-Backend: RESTful API built with Spring Boot, handling business logic and financial analysis.
-
-Frontend: React + Material UI + Vite, providing a fast, modern, and user-friendly interface.
-
-Database: MySQL used for persistent data storage.
-
-DevOps: Docker containers integrated with Jenkins pipelines for CI/CD.
-
-Web Server: Nginx used as reverse proxy for serving the frontend and managing requests.
-
-Cloud: Deployed on Microsoft Azure for scalability and accessibility.
-
-📌 Key Highlights
-
-Full-stack system combining robust backend services with a user-centered frontend.
-
-Automated deployment pipeline ensuring fast and reliable releases.
-
-Cloud-ready architecture supporting scalability and modern banking operations.
 
 UI designed with usability principles to enhance user experience.
 
