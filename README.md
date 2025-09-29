@@ -67,12 +67,3 @@ PrestaBanco is a **banking system** developed as part of the *Software Engineeri
 ## 📖 Course Context  
 
 This project was developed for the *Software Engineering Techniques* course, focusing on the application of software engineering practices, usability design, and DevOps integration in real-world scenarios.  
-
----
-
-
-UI designed with usability principles to enhance user experience.
-
-📖 Course Context
-
-This project was developed for the Software Engineering Techniques course, focusing on the application of software engineering practices, usability design, and DevOps integration in real-world scenarios.
